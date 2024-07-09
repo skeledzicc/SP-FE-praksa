@@ -1,0 +1,111 @@
+.brendovi{
+    height: 550px;
+    background-color: white;
+}
+.sadrzaj {
+    height: 450px;
+    background-color: white;
+}
+
+.tx{
+    margin-top: 80px;
+    padding-top: 80px;
+    margin-left: 30%;
+    font-size: 28px;
+    font-family: "Inter",sans-serif;
+}
+.znak-linija{
+    background-color: rgba(196, 196, 196, 0.4);
+    height: 3px;
+    margin-top: 40px;
+    width: 650px;
+    margin-left: 410px;
+}
+
+.slikeBrendova img{
+    margin-left: 7.5%;
+}
+.brendovi input{
+    background-color: rgba(191, 15, 15, 1);
+    margin-left: 40%;
+    margin-top: 7%;
+    width: 255px;
+    height: 48px;
+    color: white;
+    font-family: "Roboto" ,sans-serif;
+}
+
+ footer{
+    width: 100%;
+    height: 385px;
+    background: url("/images/White-fur-rug-texture-patternpictures-1313\ 1.png");
+ }
+
+ footer .footerContr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    height: 100%;
+ }
+
+ footer .footerTopSection{
+    color: #fff;
+    padding: 100px 120px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+    height: 80%;
+    width: 100%;
+    overflow: hidden;
+ }
+ footer .footerTopSection h2{
+    margin-top: -25px;
+ }
+
+ footer .footerTopSection .adresa{
+    width: 166px;  
+    margin-left: 30px;
+    margin-top: -30px;
+    margin-bottom: 20px;
+ }
+
+ footer .footerTopSection .brTel{  
+    margin-left: 30px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+ }
+ footer .footerTopSection .mail{
+    margin-left: 30px;
+    margin-top: -20px;
+ }
+
+ footer .footerTopSection .logo{
+    width: 85px;
+    height: 85px;
+ }
+ footer .footerTopSection .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: -67px;
+ }
+ footer .footerTopSection .socials img{
+    margin-top: -67px;
+ }
+
+
+ footer .footerBottomSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 20%;
+    background-color: rgba(0, 0, 0, 0.5);
+ }
+ footer .footerBottomSection p{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+ }

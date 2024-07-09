@@ -1,0 +1,225 @@
+.prep {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.prep .slike{
+    width: 100%;
+    height: 100vh;
+}
+.prep .slike img{
+    width: 400px;
+    height: 278px;
+    justify-content: space-evenly;
+    margin-left: 75px;
+    margin-top: 20px;
+    gap:25px;
+}
+
+.prep .texts{
+    margin-left: 76px;
+    display: flex;
+    gap: 275px;
+    align-items: flex-start;
+    margin-top: 18px;
+}
+
+.prep .text{
+    font-family: Roboto;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    font-size: 20px;
+    justify-content: space-evenly;
+} 
+.prep .oblici{
+    height: 2px;
+    width: 50px;
+}
+.prep .oblici .o1{
+    background-color: #BF0F0F;
+    margin-left: 75px;
+    width: 50px;
+    height: 3px;
+    margin-top: 5px;
+}
+.prep .oblici .o2{
+    background-color: #BF0F0F;
+    margin-left: 596px;
+    width: 42px;
+    height: 3px;
+    margin-top: 5px;
+}
+.prep .oblici .o3{
+    background-color: #BF0F0F;
+    width: 43px;
+    height: 3px;
+    margin-top: 0px;
+    margin-left: 1030px;
+}
+/* .prep .oblici .o4{
+    background-color: #BF0F0F;
+    height: 12px;
+    width: 400px;
+    margin-top: -110px;
+    margin-left: 1033px;
+} */
+
+.prep h2{
+    margin-top: 150px;
+    margin-left: 41.5%;
+    font-size: 36px;
+}
+.prep p{
+    margin-left: 44.5%;
+    font-family: Inter ,sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: center;
+}
+.prep .oblik5{
+    background-color: #BF0F0F;
+    width: 137px;
+    height: 6px;
+    margin-left: 688px;
+}
+.prez{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    height: 345px;
+    margin-top: 120px;
+    background-image: url('/images/Rectangle\ 140.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.proizvodi h3{
+    margin-top: 7%;
+    margin-left: 44%;
+    font-family: Inter ,sans-serif;
+    font-size: 28px;
+}
+.proizvodi p{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 34px;
+    margin: 0 auto;
+    max-width: 550px;
+    text-align: center;
+}
+.proizvodi .linija{
+    background-color: rgba(196, 196, 196, 0.4);
+    height: 2px;
+    width: 545px;
+    margin-left: 32%;
+    margin-top: 5%;
+}
+
+.products-container {
+    display: flex;
+    overflow-x: auto; 
+    padding: 20px 0; 
+    scroll-snap-type: x mandatory; /
+}
+
+.product-item {
+    flex: 0 0 auto; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    width: 180px; 
+    text-align: center;
+    padding: 10px; 
+    margin-right: 20px; 
+    margin-left: 70px;
+    background-color: white; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px; 
+    scroll-snap-align: start;
+}
+
+.product-item img {
+    max-width: 100%; 
+    height: auto; 
+    margin-bottom: 10px; 
+}
+
+.product-title {
+    font-family: 'Inter', sans-serif; 
+    font-size: 16px; 
+    font-weight: 700; 
+    color: #333; 
+    position: relative; 
+    margin-bottom: 5px; 
+}
+
+.product-title::after {
+    content: ""; 
+    display: block; 
+    width: 50px; 
+    height: 2px; 
+    background-color: #e53935; 
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    bottom: -5px; 
+}
+
+/* Hide scrollbar */
+.products-container::-webkit-scrollbar {
+    display: none;
+}
+
+.products-container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+/* .paket{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.slikeproiz{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll; 
+    margin-bottom: 10px;
+}
+.slikeproiz img {
+    width: 210px;
+    height: 160px;
+    margin-left: 7%;
+    margin-top: 5%;
+    background-color: white;
+}
+
+.proizv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.tt {
+    font-size: 18px;
+    margin: 5px; 
+    text-align: center;
+    width: 200px;
+    transition: opacity 0.5s ease; 
+    opacity: 0.5; 
+}
+
+.tt.active {
+    opacity: 1; 
+} */
