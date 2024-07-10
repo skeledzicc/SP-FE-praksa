@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    height: 60px;
+    height: 8%;
     width: 100%;
     position: fixed;
     top: 0;
@@ -17,18 +17,65 @@
     line-height: 18px;
     text-align: left;
 }
+
+.jezici {
+    display: flex;
+    flex-direction: row;
+}
+.jezici .active{
+    color: rgba(136, 135, 135, 1);
+}
+.jezici .Magyar a:visited{
+    color: rgba(89, 89, 89, 1);
+}
+.jezici .Magyar a:hover{
+    color: blueviolet;
+}
+.jezici .English a:visited{
+    color:  rgba(89, 89, 89, 1);;
+}
+.jezici .English a:hover{
+    color: blueviolet;
+}
+
+/* Hamburger menu */
+
+.nav-mobile {
+    display: none;
+    flex-direction: column;
+    background-color: #444;
+    overflow-y: auto;
+}
+
+.nav-mobile a {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-mobile a:hover {
+    background-color: #555;
+}
+
+.btn {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: white;
+}
+
 .logo{
     width: 218.86px;
     height: 44.08px;
     top: 17px;
-    left: 80px;
+    left: 0%;
     gap: 0px;
     opacity: 0px;
 }
 .logo img{
     width: 180px;
     top: 17px;
-    margin-left: 30px;
+    margin-left: 0;
     gap: 0px;
     opacity: 0px;
 }
@@ -46,20 +93,22 @@
 
 .navbar-menu {
     display: flex;
-    padding: 50px;
-    gap: 20px;
+    margin-top: 3.6%;
     position: fixed;
     background-color: white;
-    height: 10px;
+    height: 6%;
     width: 100%;
   }
 
   .navbar-menu li {
+    display: flex;
+    flex-direction: column ;
     list-style: none;
     text-align: center;
   }
 
   .navbar-menu a {
+    width: 100%;
     text-decoration: none;
     color: black;
     font-size: 18px;
@@ -68,14 +117,18 @@
     align-items: center;
     font-family: Roboto Condensed, serif;
     font-style:unset;
-    padding-left: 70px;
+    padding-left: 20%;
+    margin-left: 73%;
   }
 
   .navbar-menu p {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     margin: 5px 0 0;
     font-size: 14px;
     font-weight: 400;
     align-items: center;
-    padding-left: 60px; 
-    gap: 30px;
+    padding-left: 66px; 
+    margin-left: 25%;
   }

@@ -52,7 +52,7 @@
 
  footer .footerTopSection{
     color: #fff;
-    padding: 100px 120px 30px;
+    /*padding: 100px 120px 30px;*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,6 +60,7 @@
     height: 80%;
     width: 100%;
     overflow: hidden;
+    padding-right: 0;
  }
  footer .footerTopSection h2{
     margin-top: -25px;
@@ -108,4 +109,13 @@
  footer .footerBottomSection p{
     color: rgba(255, 255, 255, 0.7);
     font-size: 14px;
+ }
+ footer.footerBottomSection a:visited{
+    color:blueviolet;
+ }
+ footer.footerBottomSection a:hover{
+    color: red;
+ }
+ footer .footerBottomSection a{
+    color: rgba(255, 255, 255, 0.5);
  }

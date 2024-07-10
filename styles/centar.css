@@ -1,14 +1,19 @@
-
+.slika{
+    width: 100%;
+}
 .slika img{
     width: 100%;
-    height: 100vh;
-    margin-top: 127px;
+    height: auto;
+    min-height: 40vh;
+    margin-top: 3%;
     margin-right: 0px;
     padding: 0;
     background-image: cover;
     background-position: center;
 }
-
+.kompanija{
+    width: 100%;
+}
 .kompanija img{
     margin-top: 40px;
     width: 710px;
@@ -21,40 +26,38 @@
 .kompanija h2{
     width: 272px;
     height: 34px;
-    margin-top: -450px;
-    margin-left: 765px;
-    gap: 0px;
-    opacity: 0px;
-    margin-bottom: 0px;
+    margin-top: -30%;
+    margin-left: 50%;
+    font-size: 32px;
 
 }
 
 .kompanija p{
-    margin-left: 765px;
+    margin-left: 50%;
     align-items: center;
     display: block;
     block-size: 30px;
-    padding-right: 100px;
-    margin-top: 40px;
+    margin-top: 7;
 }
 .kompanija .podnaslov{
     font-size: 23px;
 }
 .kompanija input{
-    margin-left: 765px;
-    margin-top: 170px;
+    margin-left: 50%;
+    margin-top: 10%;
     background-color: #BF0F0F;
     width: 170px;
     height: 40px;
     font-size: medium;
     color: white;
+    margin-bottom: 5%;
 }
 .kompanija .linijaNasl{
     height: 6px;
     width: 115px;
     position: absolute;
-    margin-left: 764px;
-    margin-top: 10px;
+    margin-left: 50%;
+    margin-top: -15px;
     background-color: #BF0F0F;
 }
 .kompanija .linijaRazd{
@@ -64,13 +67,15 @@
     margin-top: 45px;
     background-color: #D9D9D9;
 }
-.parallax{
+.centar{
     position: relative;
     overflow-x: hidden;
-    height: 502px;
+    width: 100%;
+    height: 85vh;
+    min-height: 50vh;
     perspective: 1px;
 }
-.parallax img{
+.centar img{
    width: 100%;
    height: 90%;
    margin-top: 20px;
@@ -81,19 +86,19 @@
     filter: brightness(45%);
     position: relative;
 }
-.parallax h2{
-    margin-top: -290px;
-    margin-bottom: 200px;
-    margin-left: 545px;
+.centar h2{
+    margin-top: -12%;
+    margin-bottom: 0;
+    margin-left: 37%;
     position: absolute;
     color:white ;
     font-size: 32px;
 }
-.parallax .linija{
+.centar .linija{
     background-color: red;
     width: 137px;
     height: 6px;
-    top: 230px;
-    left: 670px;
+    top: 60%;
+    left: 45%;
     position: absolute;
 }

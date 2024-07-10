@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>DVG COMPANY</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" media="screen" href="/styles/style.css" />
+    <link rel="stylesheet" media="screen" href="/styles/main.css" />
     <link rel="stylesheet" href="/styles/header.css" />
     <link rel="stylesheet" href="/styles/centar.css" />
     <link rel="stylesheet" href="/styles/products.css" />
     <link rel="stylesheet" href="/styles/footer.css" />
+    <link rel="stylesheet" href="/styles/responsive.css" />
 
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,19 +32,6 @@
       rel="stylesheet"
     />
 
-    <!-- SLICK CSS-->
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-    />
-
     <script src="main.js"></script>
   </head>
   <body>
@@ -52,9 +40,9 @@
         <img src="/images/dvg.png" alt="logo kompanije DVG" />
       </div>
       <div class="jezici">
-        <a href="">Srpski</a>
-        <a href="">English</a>
-        <a href="">Magyar</a>
+        <div class="Srpski"><a href="" class="active">Srpski</a></div>
+        <div class="English"><a href="">English</a></div>
+        <div class="Magyar"><a href="">Magyar</a></div>
       </div>
     </div>
     <ul class="navbar-menu">
@@ -87,6 +75,21 @@
         <p>kontaktirajte nas</p>
       </li>
     </ul>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <div class="nav-mobile">
+        <a href="#">O nama</a>
+        <a href="#">DVG proizvodi</a>
+        <a href="#">Brendovi</a>
+        <a href="#">Distribucija</a>
+        <a href="#">Saradnja</a>
+        <a href="#">Novosti</a>
+        <a href="#">Kontakt</a>
+      </div>
+    </nav>
     <div class="slika">
       <img src="/images/1.png" alt="zgrada kompanije dvg" />
     </div>
@@ -114,36 +117,34 @@
         <input type="submit" value="Saznajte više o nama" />
       </div>
     </section2>
-    <section3>
-      <div class="parallax">
-        <img src="/images/3.jpeg" alt="" />
-        <h2>POUZDANA DISTRIBUCIJA</h2>
-        <div class="linija"></div>
+
+    <div class="centar">
+      <img src="/images/3.jpeg" alt="" />
+      <h2>POUZDANA DISTRIBUCIJA</h2>
+      <div class="linija"></div>
+    </div>
+
+    <div class="prep">
+      <div class="slike">
+        <img src="/images/4.jpeg" alt="" />
+        <img src="/images/5.png" alt="" />
+        <img src="/images/6.png" alt="" />
       </div>
-    </section3>
-    <section4>
-      <div class="prep">
-        <div class="slike">
-          <img src="/images/4.jpeg" alt="" />
-          <img src="/images/5.png" alt="" />
-          <img src="/images/6.png" alt="" />
-        </div>
-        <div class="texts">
-          <div class="text">POSTANITE NAŠ PARTNER</div>
-          <div class="text">NAŠI PROIZVODI</div>
-          <div class="text">UVOZ IZ MAĐARSKE</div>
-        </div>
-        <div class="oblici">
-          <div class="o1"></div>
-          <div class="o2"></div>
-          <div class="o3"></div>
-          <div class="o4"></div>
-        </div>
-        <h2>DVG COMPANY</h2>
-        <p>u brojkama</p>
-        <div class="oblik5"></div>
+      <div class="texts">
+        <div class="text">POSTANITE NAŠ PARTNER</div>
+        <div class="text">NAŠI PROIZVODI</div>
+        <div class="text" style="padding-right: 10%">UVOZ IZ MAĐARSKE</div>
       </div>
-    </section4>
+      <div class="oblici">
+        <div class="o1"></div>
+        <div class="o2"></div>
+        <div class="o3"></div>
+        <div class="o4"></div>
+      </div>
+      <h2>DVG COMPANY</h2>
+      <p>u brojkama</p>
+      <div class="oblik5"></div>
+    </div>
     <div class="prez"></div>
     <div class="proizvodi">
       <h3>Naši proizvodi</h3>
