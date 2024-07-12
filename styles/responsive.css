@@ -1,7 +1,14 @@
 @media screen and (max-width:1024px){
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
     .header {
         flex-direction: column;
         align-items: flex-start;
+        position: relative;
     }
     .logo{
         width: 80%;
@@ -19,37 +26,73 @@
     .jezici{
         display: none;
     }
-    .btn {
-        display: block;
-        font-size: 1.5em;
-        cursor: pointer;
-        color: white;
-    }
     .navbar-menu{
-        padding: 0;
+        display: flex;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        top: -1000px;
+        position: absolute;
+        height: auto;
+        left: 0;
+        z-index: -1;
+        margin-top: 40px;
+    }
+    .navbar-menu.showMenu{
+        top: 0;
+        z-index: 100;
     }
 
     .navbar-menu li{
-        display: none;
+        align-items: center;
+        margin-top: 5px;
     } 
-    .btn {
-        display: block;
-    }
-
-    .nav-mobile {
-        display: flex;
-        margin-top: 30px;
-        height: 150px;
-        padding-top: 5%;
-    }
-
-    #check {
+    .navbar-menu li p{
         display: none;
     }
-
-    #check:checked ~ .nav-mobile {
-        display: flex;
+    .navbar-menu li a{
+        color: #fff;
+        margin: 0%;
+        align-items: center;
     }
+    .menuItem:hover {
+        text-decoration: underline;
+    }
+
+    .menuItem {
+        color: white;
+        text-decoration: none;
+        margin-top: 0%;
+        margin-left: 0%;
+    }
+    
+    .hamburgerMenu.hamburger{
+        
+        position: fixed;
+        background: rgb(137, 133, 140);
+        margin-top: -13px;
+    }
+
+    .hamburger {
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        z-index: 100;
+        top: 3px;
+        right: 1rem;
+        padding: 2px;
+        background: rgb(137, 133, 140);
+        cursor: pointer;
+      }
+      .closeIcon {
+        display: none;
+      }
+      .material-icons img{
+        width: 20px;
+        height: 20px;
+        align-items: end;
+      }
+      
 
     /* slike */
 
@@ -57,7 +100,7 @@
         width: 100%;
         height: auto;
         object-fit: cover;
-        margin-top: -3%;
+        margin-top: 0%;
     }
     .kompanija img{
         width: 45%;
@@ -76,17 +119,17 @@
 
     .kompanija h2{
         font-size: 18px;
-        margin-top: -38%;
+        margin-top: -35%;
         align-items: center;
         gap: 0;
     }
     .kompanija .podnaslov{
         font-size: 14px;
-        margin-top: -2.5%;
+        margin-top: 0%;
     }
     .kompanija p{
         align-items: center;
-        margin-top: 1%;
+        margin-top: 5%;
         font-size: 12px;
     }
     .kompanija .linijaNasl{
@@ -101,27 +144,38 @@
         width: 15.5%;
         height: auto;
         font-size: 14px;
-        margin-top: 15%;
+        margin-top: 20%;
+    }
+    .centar{
+        width: 100%;
+        height: auto;
     }
     .centar img{
         width: 100%;
-        height: 40vh;
+        height: 90%;
     }
 
     .centar h2{
         text-align: center;
         font-size: medium;
-        margin-top: -27%;
-        margin-left: 34%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        /* margin-top: -27%;
+        margin-left: 34%; */
     }
     .centar .linija{
        display:  none;
     }
 
-    .prep .slike img{
-        margin-top: 0%;
-        width: 25%;
+    .prep .slike{
+        width: 100%;
         height: auto;
+    }
+    .prep .slike img{
+        margin-top: 2%;
+        width: 25%;
+        height: 95px;
     }
     .prep .texts{
         width: 100%;
@@ -142,11 +196,11 @@
     .prep h2{
         font-size: 22px;
         margin-top: 5%;
-        margin-left: 36%;
+        margin-left: 38%;
     }
     .prep p{
         font-size: 14px;
-        margin-left: 41% ;
+        margin-left: 43%;
         margin-bottom: 2%;
     }
     .prep .oblik5{
@@ -164,6 +218,7 @@
         background-size: cover;
     }
     .tx{
+        margin-top: 0%;
         font-size: 24px;
         text-align: center;
         margin-left: 2%;
@@ -187,6 +242,25 @@
         text-align: center;
         margin-left: 5%;
         margin-right: 4%;
+    }
+    .product-container{
+        width: 100%;
+        height: auto;
+    }
+    .product-wrapper {
+        flex-wrap: nowrap; 
+    }
+
+    .product-title{
+        font-size: 16px;
+    }
+
+    .slider-controls{
+        align-items: center;
+        justify-content: center;
+        position: sticky;
+        margin-left: 90px;
+        padding-right: 200px;
     }
     .product-item{
         display: flex;

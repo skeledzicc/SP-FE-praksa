@@ -1,4 +1,8 @@
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 body{
     width: 100%;
     min-height: 100vh;
@@ -8,7 +12,33 @@ body{
     margin-left: 0;
     margin-bottom: 0;
 }
+.dark-mode {
+    background-color: black;
+    color: white;
+}
 
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+/* body, html {
+    height: 100%;
+  }
+  
+  .parallax {
+     The image used 
+    background-image: url("/images/3.jpeg");
+  
+    /* Full height 
+    height: 100%;
+  
+    /* Create the parallax scrolling effect 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  } */
 
 
 
