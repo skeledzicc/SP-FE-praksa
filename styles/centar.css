@@ -1,114 +1,125 @@
-.slika{
-    width: 100%;
-}
-.slika img{
+/* video */
+
+.video{
     width: 100%;
     height: auto;
-    min-height: 40vh;
-    margin-top: 0%;
-    margin-right: 0px;
-    padding: 0;
-    background-image: cover;
-    background-position: center;
 }
-.kompanija{
+
+.video video{
     width: 100%;
+    height: auto;
 }
-.kompanija img{
+
+/* description */
+
+.company-description{
+    width: 100%;
+    height: 647px;
+}
+.company-description img{
     margin-top: 40px;
     width: 710px;
     height: 504px;
     top: 915px;
-    gap: 0px;
-    opacity: 0px;
-    align-items:flex-start;
 }
-.kompanija h2{
-    width: 272px;
+.company-description h2{
+    width: 300px;
     height: 34px;
-    margin-top: -30%;
-    margin-left: 50%;
-    font-size: 32px;
-
+    font-size: 42px;
+    margin-top: -463px;
+    margin-left: 766px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
 }
-
-.kompanija p{
+.company-description p{
     margin-left: 50%;
     align-items: center;
     display: block;
+    white-space: wrap;
     block-size: 30px;
     margin-top: 7;
+    width: 524px;
+    top: 1214px;
+    left: 765px;
 }
-.kompanija .podnaslov{
-    font-size: 23px;
+.company-description .podnaslov{
+    width: 506px;
+    height: 68px;
+    top: 1052px;
+    left: 765px;
+    font-size: 28px;
     margin-top: 3%;
 }
-.kompanija input{
+.company-description input{
     margin-left: 50%;
-    margin-top: 10%;
+    margin-top: 142px; 
     background-color: #BF0F0F;
-    width: 170px;
-    height: 40px;
-    font-size: medium;
+    width: 184px;
+    height: 48px;
+    font-size: 16px;
     color: white;
-    margin-bottom: 5%;
+    border-radius: 6px 6px 6px 6px;
+    gap: 8px;
+    opacity: 0px; 
 }
-.kompanija .linijaNasl{
+input:hover{
+    background-color: white;
+    color: #BF0F0F;
+    transition: 0.3s ease-in-out;
+    border: 2px solid #BF0F0F;
+}
+.company-description .linijaNasl{
     height: 6px;
-    width: 115px;
+    width: 137px;
     position: absolute;
-    margin-left: 50%;
-    margin-top: 7px;
+    margin-left: 770px;
+    margin-top: 17px;
     background-color: #BF0F0F;
 }
-.kompanija .linijaRazd{
-    height: 2px;
-    width: 650px;
+.company-description .linijaRazd{
+    height: 3px;
+    width: 524px;
     margin-left: 764px;
     margin-top: 45px;
+    margin-bottom: 45px;
     background-color: #D9D9D9;
 }
 
- .centar{
-    position: relative;
-    overflow-x: hidden;
-    width: 100%;
+/* slika za parallax */
+
+.container{
     height: 80vh;
-    margin-top: 2%;
-
-}
-.centar img{
-   width: 100%;
-   height: 90%;
-   margin-top: 20px;
-   object-fit:cover;
-   opacity: 80%;
-    background-size: cover;
-    background-position: center; 
     background-image: url("/images/3.jpeg");
-    filter: brightness(45%);
-    position: relative;
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    overflow-x: hidden;
+    position: relative;
 }
-
-
-.centar h2{
-    /* margin-top: -12%;
-    margin-bottom: 0;
-    margin-left: 37%; */
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); 
+.content{
     position: absolute;
-    color:white ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
     font-size: 32px;
 }
-.centar .linija{
+.content h2{
+    font-family: "Roboto";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0.325em;
+    text-align: center;
+
+}
+.content .linija{
     background-color: red;
     width: 137px;
     height: 6px;
-    top: 60%;
-    left: 45%;
+    top: 60px;
+    left: 220px;
     position: absolute;
-} 
+}

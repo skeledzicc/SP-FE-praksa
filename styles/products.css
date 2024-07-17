@@ -1,102 +1,214 @@
-.prep {
+.products {
     width: 100%;
+    height: 450px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
+    justify-content: space-evenly;
+    background-color: white;
+    gap: 0px;
 }
-.prep .slike{
-    width: 100%;
-
+.container1{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
 }
-.prep .slike img{
+.container1 .slika1{
+    position: relative;
+    width: 400px;
+}
+.container2 .slika2{
+    position: relative;
+    width: 400px;
+}
+.container3 .slika3{
+    position: relative;
+    width: 400px;
+}
+.container1 .slika1 img{
     width: 400px;
     height: 278px;
     justify-content: space-evenly;
-    margin-left: 5%;
-    margin-top: 2%;
-    gap:4%;
-    object-fit:fill;
+    margin-top: 50px;
+    object-fit: cover; 
 }
-
-.prep .texts{
+.container1 .text1{
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    margin-left: 5%;
-    gap: 3.3%;
-    margin-right: 15%;
-    align-items: flex-start;
-    margin-top: 2%;
-}
-
-.prep .text{
-    width: 100%;
-    font-family: Roboto;
+    font-family: "Roboto";
     line-height: 80%;
+    margin-top: 20px;
     text-align: left;
     font-size: 20px;
     justify-content: space-evenly;
-} 
-.prep .oblici{
+}
+.container1 .o1{
+    background-color: #BF0F0F;
+    margin-left: 0px;
+    width: 45px;
     height: 2px;
-    width: 100%;
+    margin-top: 15px;
 }
-.prep .oblici .o1{
-    background-color: #BF0F0F;
-    margin-left: 5%;
-    width: 3%;
-    height: 150%;
-    margin-top: 1%;
+.container2{
+    width: 401px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
 }
-.prep .oblici .o2{
-    background-color: #BF0F0F;
-    margin-left: 35.9%;
-    width: 3%;
-    height: 150%;
-    margin-top: 0%;
-}
-.prep .oblici .o3{
-    background-color: #BF0F0F;
-    width: 3%;
-    height: 150%;
-    margin-top: 0%;
-    margin-left: 67.5%;
-}
-/* .prep .oblici .o4{
-    background-color: #BF0F0F;
-    height: 12px;
+.container2 .slika2 img{
     width: 400px;
-    margin-top: -110px;
-    margin-left: 1033px;
-} */
-
-.prep h2{
-    margin-top: 7%;
-    margin-left: 41.5%;
-    font-size: 36px;
+    height: 278px;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    object-fit:fill; 
 }
-.prep p{
-    margin-left: 44.5%;
-    font-family: Inter ,sans-serif;
-    font-size: 28px;
-    line-height: 10%;
-    text-align: center;
-    margin-top: 2%;
+.container2 .text2{
+    width: 100%;
+    font-family: "Roboto";
+    line-height: 80%;
+    margin-left: 76px;
+    margin-top: 18px;
+    text-align: left;
+    font-size: 20px;
+    justify-content: space-evenly;
 }
-.prep .oblik5{
+.container2 .o2{
     background-color: #BF0F0F;
-    width: 137px;
+    margin-left: 75px;
+    width: 45px;
+    height: 2px;
+    margin-top: 15px;
+}
+.container3{
+    width: 401px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container3 .slika3 img{
+    width: 400px;
+    height: 278px;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    object-fit:fill; 
+}
+.container3 .text3{
+    width: 100%;
+    font-family: "Roboto";
+    line-height: 80%;
+    margin-left: 74px;
+    margin-top: 18px;
+    text-align: left;
+    font-size: 20px;
+    justify-content: space-evenly;
+}
+.container3 .o3{
+    background-color: #BF0F0F;
+    margin-left: 75px;
+    width: 45px;
+    height: 2px;
+    margin-top: 15px;
+}
+.container1 .slika1::before {
+    content: '';
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 100%;
     height: 6px;
-    margin-left: 44.8%;
-    margin-top: 2%;
+    background-color: rgba(191, 15, 15, 1);
+    transform: scaleX(0);
+    transform-origin: bottom left; 
+    transition: transform 0.5s ease-out;
+    z-index: 1;
+}
+.container1:hover .slika1::before {
+    transform: scaleX(1);
+    transform-origin: bottom left; 
+}
+.container1:hover .text1 {
+    color: #BF0F0F; 
+}
+.container2 .slika2::before {
+    content: '';
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-color: rgba(191, 15, 15, 1);
+    transform: scaleX(0);
+    transform-origin: bottom left; 
+    transition: transform 0.5s ease-out;
+    z-index: 1;
+}
+.container2:hover .slika2::before {
+    transform: scaleX(1);
+    transform-origin: bottom left; 
+}
+.container2:hover .text2 {
+    color: #BF0F0F; 
+}
+.container3 .slika3::before {
+    content: '';
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-color: rgba(191, 15, 15, 1);
+    transform: scaleX(0);
+    transform-origin: bottom left; 
+    transition: transform 0.5s ease-out;
+    z-index: 1;
+}
+.container3:hover .slika3::before {
+    transform: scaleX(1);
+    transform-origin: bottom left; 
+}
+.container3:hover .text3 {
+    color: #BF0F0F; 
+}
+.products h2{
+    margin-top: 450px;
+
+}
+
+/* sledeca sekcija*/
+
+.business-desc{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+}
+.business-desc h2{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 42px;
+    margin-left: 620px;
+}
+.business-desc p{
+    font-family: "Inter";
+    font-size: 28px;
+    margin-left: 680px;
+}
+.business-desc .oblik5{
+    height: 6px;
+    width: 144px;
+    margin-top: 10px;
+    margin-left: 680px;
+    background-color: #BF0F0F;
 }
 .prez{
     width: 100%;
     height: 345px; 
     position: relative;
-    margin-top: 5%;
-    background-image: url('/images/Rectangle 140.png'); /* Ensure the URL is correct */
-    background-position: center;
+    margin-top: 60px;
+    background-image: url('/images/Rectangle 140.png'); 
+    background-position: fill;
+    background-repeat: no-repeat;
     padding: 0%;
 }
 
