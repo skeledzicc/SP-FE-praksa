@@ -199,19 +199,19 @@
     width: 144px;
     margin-top: 10px;
     margin-left: 680px;
+    margin-bottom: 15px;
     background-color: #BF0F0F;
 }
 .prez{
     width: 100%;
     height: 345px; 
     position: relative;
-    margin-top: 60px;
+    margin-top: 55px;
     background-image: url('/images/Rectangle 140.png'); 
     background-position: fill;
     background-repeat: no-repeat;
     padding: 0%;
 }
-
 .products-container {
     position: relative;
     max-width: 100%;
@@ -273,7 +273,7 @@
 
 .proizvodi h3{
     margin-top: 7%;
-    margin-left: 42%;
+    margin-left: 43%;
     font-family: Inter ,sans-serif;
     font-size: 28px;
 }
@@ -285,6 +285,7 @@
     margin: 0 auto;
     max-width: 550px;
     text-align: center;
+    margin-bottom: 10px;
 }
 .proizvodi .linija{
     background-color: rgba(196, 196, 196, 0.4);

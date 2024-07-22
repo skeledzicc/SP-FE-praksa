@@ -56,17 +56,13 @@ toggle.addEventListener("click", () => {
 
 //popup
 
-const popup = document.querySelector(".popupBox");
-const close = document.querySelector(".close");
+document.addEventListener('DOMContentLoaded', function() {
+  var popupButton = document.getElementById('popup-button');
+  var popupContent = document.getElementById('popup-content');
 
-window.onload = function () {
-  setTimeout(() => {
-    popup.style.display = "block";
-  }, 1000);
-};
-
-close.addEventListener("click", () => {
-  popup.style.display = "none";
+  popupButton.addEventListener('click', function() {
+    popupContent.classList.toggle('show');
+  });
 });
 
 

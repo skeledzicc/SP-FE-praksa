@@ -38,24 +38,43 @@
   #toggle:hover {
     background-color: gray;
   }
-
   .dark-theme .brendovi{
     background-color: var(--bg-color);
   }
   .dark-theme .brendovi .sadrzaj{
     background-color: var(--bg-color);
   }
-  .dark-theme .sadrzaj input{
-    background-color: rgb(94, 16, 16);
-  }
   .dark-theme .products-container .product-item{
     background-color: rgb(229, 230, 233);
+  }
+  .dark-theme .products{
+    background-color: var(--bg-color);
+  }
+  .dark-theme .business-desc{
+    background-color: var(--bg-color);
   }
 .dark-theme .navbar-menu{
     background-color: var(--bg-color);
  }
 .dark-theme .kompanija input{
     background-color: rgb(94, 16, 16);
+}
+.dark-theme .popup-content{
+  color: black;
+}
+.dark-theme .header{
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+.dark-theme .jezici{
+  background-color: var(--bg-color);
+}
+.dark-theme .navbar-menu .column{
+  color: var(--text-color);
+}
+.dark-theme .navbar-menu .column:hover{
+  color: var(--text-color);
+  background-color: var(--bg-color);
 }
 
 /*header ..*/
